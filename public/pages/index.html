@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="scotchTodo">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dad's Business</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+        #todo-list              { margin-bottom:30px; }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+    <script src="routes/route.js"></script>
+    <script src="controllers/mainController.js"></script>
+    <script src="controllers/loanController.js"></script>
+    <script src="service/loanService.js"></script>
+</head>
+<body>
+    <div class="container" ng-view></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+        <!-- TODO LIST -->
+        <div id="todo-list" class="row" ng-controller="mainController">
+            <div>
+                <h2>Depositer's List:</h2>
+                <table class="table table-hover table-striped records">
+                    <thead>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Father's Name</th>
+                        <th>Nominee's Name</th>
+                        <th>Deposited Amount</th>
+                        <th>Deposited Date</th>
+                        <th>Maturity Amount</th>
+                        <th>Maturity Date</th>
+                        <th>Edit</th>
+                        <th>Get Loan</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="todo in todos">
+                            <td>{{$index+1}}</td>
+                            <td>{{todo.name}}</td>
+                            <td>{{todo.fatherName}}</td>
+                            <td>{{todo.nomineeName}}</td>
+                            <td>{{todo.depositAmount}}</td>
+                            <td>{{todo.depositDate}}</td>
+                            <td>{{todo.maturityAmount}}</td>
+                            <td>{{todo.maturityDate}}</td> 
+                            <td><a href="">Edit</a></td>  
+                            <td><a href="/takeLoan">Take Loan</a></td>
+                            <td><a href="" ng-click="deleteTodo(todo._id)">Delete</a></td>   
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- FORM TO CREATE TODOS -->
+        
